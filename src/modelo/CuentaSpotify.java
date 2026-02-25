@@ -88,5 +88,8 @@ public class CuentaSpotify {
         }
         System.out.println("Playlist no encontrada");
     }
+    public boolean isSesionIniciada() {
+        return sesionIniciada;
+    }
 
 }

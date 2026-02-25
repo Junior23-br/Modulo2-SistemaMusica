@@ -82,6 +82,10 @@ public class SpotifyApp {
 
             int opcion = sc.nextInt();
             sc.nextLine();
+            if (!cuenta.isSesionIniciada() && opcion != 1 && opcion != 6) {
+                System.out.println("Debe iniciar sesión para usar esta opción");
+                continue;
+            }
 
             switch (opcion) {
 
